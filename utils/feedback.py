@@ -6,6 +6,7 @@ import utils.col_refs as REF
 # return database series 
 
 def get_feedback(employeeID, benefitID): 
-    grouped = FEEDBACK.groupby([REF.employeeID, REF.benefitID], as_index=True)
-    result = grouped[grouped[REF.employeeID] == employeeID and grouped[REF.benefitID] == benefitID]
+    # filter for employee match then benefit match 
+    result = FEEDBACK[FEEDBACK[REF.employeeID] == employeeID]
+    result = result[result[REF.benefitID] == benefitID]
     return result

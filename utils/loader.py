@@ -21,5 +21,3 @@ print(f"Loaded {len(BENEFITS_USAGE)} benefits usage data!")
 # merge complete benefit data onto employee
 EMPLOYEES_BENEFITS_USAGE = pd.merge(EMPLOYEES, BENEFITS_USAGE, on=REF.employeeID, how="left")
 print(f"Loaded {len(EMPLOYEES_BENEFITS_USAGE)} employees benefits usage data!")
-
-print(EMPLOYEES_BENEFITS_USAGE.columns, FEEDBACK.columns)
