@@ -1,2 +1,5 @@
-*/.DS_Store
-*/__pycache__
+# local cache
+.DS_Store
+
+# python runtime cache
+__pycache__
