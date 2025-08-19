@@ -3,3 +3,6 @@
 
 # python runtime cache
 __pycache__
+
+# virtual environment
+.venv
