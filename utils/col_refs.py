@@ -1,0 +1,2 @@
+employeeID, age, gender, deparment, tenure, benefitID, usage_freq, last_used_date, benefit_type, benefit_subtype, benefit_cost = 'EmployeeID', 'Age', 'Gender', 'Department', 'Tenure', 'BenefitID', 'UsageFrequency', 'LastUsedDate', 'BenefitType', 'BenefitSubType', 'BenefitCost'
+satisfaction, comments = 'SatisfactionScore', 'Comments'
