@@ -1,3 +1,4 @@
 from utils.feedback import get_feedback
+from models.collab_filter import get_collab_recommendations
 
-get_feedback(970, 19)
+get_collab_recommendations(4245)
