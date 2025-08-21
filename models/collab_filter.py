@@ -3,7 +3,7 @@ from utils.loader import BENEFITS, EMPLOYEES_BENEFITS_USAGE
 import utils.col_refs as REF
 from sklearn.metrics.pairwise import euclidean_distances as sim 
 
-LIMIT = 25
+LIMIT = 10
 MAX_USAGE_COST = np.max(BENEFITS[REF.benefit_cost])
 # benefit id = idx + 1
 BENEFITS_VECTORIZER = BENEFITS[REF.benefitID].tolist()
@@ -55,29 +55,26 @@ def get_collab_recommendations(target_employee):
         employee_recs.append((employee, similarity))
     
     # find symmetric difference between top 3 employee recommendations and target employee
+    delta_vector = [0] * len(BENEFITS_VECTORIZER)
     employee_recs = sorted(employee_recs, key=lambda x: x[1], reverse=True)[:LIMIT]
     for employee, score in employee_recs: 
-        print("\n")
-        print(employee, create_vector(employee), score)
-    
-    # for employee, score in employee_recs: 
-    #     employee_vector = create_vector(employee)
-    #     sym_diff = [(employee_vector[i] - target_vector[i]) for i in range(len(BENEFITS_VECTORIZER))]
+        employee_vector = create_vector(employee)
+        sym_diff = [(employee_vector[i] - target_vector[i]) for i in range(len(BENEFITS_VECTORIZER))]
 
-    #     # update recs list with symmetric difference
-    #     for i, benefit_count in enumerate(sym_diff):
-    #         benefit = BENEFITS_VECTORIZER[i]
-    #         if benefit not in recs.keys():
-    #             recs[benefit] = [score]
-    #         else: 
-    #             recs[benefit].append(score)
+        # update recs list with symmetric difference
+        for i, delta in enumerate(sym_diff):
+            benefit = BENEFITS_VECTORIZER[i]
+            if benefit not in recs.keys():
+                recs[benefit] = [delta]
+            else: 
+                recs[benefit].append(delta)
 
-    # # aggregate employee similarity scores by rec 
-    # for benefit in recs.keys(): 
-    #     scores = recs[benefit]
-    #     recs[benefit] = sum(scores) / len(scores)
+    # aggregate employee similarity scores by rec 
+    for benefit in recs.keys(): 
+        scores = recs[benefit]
+        recs[benefit] = sum(scores) / len(scores)
     
-    # recs = sorted(recs.items(), key=lambda x: x[1], reverse=True)
-    # for rec in recs: 
-    #     print(rec)
-    # return recs
+    recs = sorted(recs.items(), key=lambda x: x[1], reverse=True)
+    for rec in recs: 
+        print(bene)
+    return recs
