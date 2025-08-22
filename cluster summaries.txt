@@ -3,8 +3,7 @@ KMeans — Global — cluster summaries:
   • Health Insurance - PPO Individual + Retirement Plan - 401k Basic Matching + Childcare - On-Site Infant Care  |  Top: Health Insurance - PPO Individual, Retirement Plan - 401k Basic Matching, Childcare - On-Site Infant Care  |  Skews: —
   • Wellness Programs - Premium Discount Tier 1 + Tuition Reimbursement - Professional Cer… + Tuition Reimbursement - Individual Courses  |  Top: Wellness Programs - Premium Discount Tier 1, Tuition Reimbursement - Professional Certification, Tuition Reimbursement - Individual Courses  |  Skews: —
   • Tuition Reimbursement - Undergraduate De… + Life Insurance - Dependent Coverage + Retirement Plan - 401k Investment Fees  |  Top: Tuition Reimbursement - Undergraduate Degree, Life Insurance - Dependent Coverage, Retirement Plan - 401k Investment Fees  |  Skews: —
-C:\Users\Mayukh Sen\AppData\Local\Temp\ipykernel_23204\3734768921.py:99: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all axes decorations.
-  plt.tight_layout(); plt.show()
+
 
 
 
@@ -13,8 +12,7 @@ GMM — Global — cluster summaries:
   • Health Insurance - PPO Individual + Retirement Plan - 401k Investment Fees + Wellness Programs - Premium Discount Tier 1  |  Top: Health Insurance - PPO Individual, Retirement Plan - 401k Investment Fees, Wellness Programs - Premium Discount Tier 1  |  Skews: —
   • Tuition Reimbursement - Undergraduate De… + Wellness Programs - Premium Discount Tier 1 + Technology Stipend - Monthly Internet Al…  |  Top: Tuition Reimbursement - Undergraduate Degree, Wellness Programs - Premium Discount Tier 1, Technology Stipend - Monthly Internet Allowance  |  Skews: —
   • Health Insurance - PPO Individual + Life Insurance - Supplemental Standard + Tuition Reimbursement - Professional Cer…  |  Top: Health Insurance - PPO Individual, Life Insurance - Supplemental Standard, Tuition Reimbursement - Professional Certification  |  Skews: —
-C:\Users\Mayukh Sen\AppData\Local\Temp\ipykernel_23204\3734768921.py:99: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all axes decorations.
-  plt.tight_layout(); plt.show()
+
 
 
 
@@ -24,10 +22,7 @@ KMeans — AgeGroup=Millennial (26–41) — cluster summaries:
   • Flexible Spending Account - Healthcare FSA + Retirement Plan - 401k Maximum Matching + Retirement Plan - 401k Investment Fees | AgeGroup: Millennial (26–41) (100%)  |  Top: Flexible Spending Account - Healthcare FSA, Retirement Plan - 401k Maximum Matching, Retirement Plan - 401k Investment Fees  |  Skews: AgeGroup=Millennial (26–41) (100%)
   • Retirement Plan - 401k Standard Matching + Wellness Programs - Premium Discount Tier 1 + Cell Phone Allowance - Monthly Communica… | AgeGroup: Millennial (26–41) (100%)  |  Top: Retirement Plan - 401k Standard Matching, Wellness Programs - Premium Discount Tier 1, Cell Phone Allowance - Monthly Communications  |  Skews: AgeGroup=Millennial (26–41) (100%)
   • Health Insurance - PPO Family + Gym Membership - Tier 3 Partners + Gym Membership - Tier 2 Partners | AgeGroup: Millennial (26–41) (100%)  |  Top: Health Insurance - PPO Family, Gym Membership - Tier 3 Partners, Gym Membership - Tier 2 Partners  |  Skews: AgeGroup=Millennial (26–41) (100%)
-d:\Anaconda\Lib\site-packages\sklearn\cluster\_kmeans.py:1382: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=7.
-  warnings.warn(
-C:\Users\Mayukh Sen\AppData\Local\Temp\ipykernel_23204\3734768921.py:99: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all axes decorations.
-  plt.tight_layout(); plt.show()
+
 
 
 
@@ -38,8 +33,7 @@ KMeans — AgeGroup=Boomer (58+) — cluster summaries:
   • Gym Membership - Tier 1 Partners + Retirement Plan - 401k Maximum Matching + Tuition Reimbursement - Professional Cer… | AgeGroup: Boomer (58+) (100%)  |  Top: Gym Membership - Tier 1 Partners, Retirement Plan - 401k Maximum Matching, Tuition Reimbursement - Professional Certification  |  Skews: AgeGroup=Boomer (58+) (100%)
 d:\Anaconda\Lib\site-packages\sklearn\cluster\_kmeans.py:1382: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=4.
   warnings.warn(
-C:\Users\Mayukh Sen\AppData\Local\Temp\ipykernel_23204\3734768921.py:99: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all axes decorations.
-  plt.tight_layout(); plt.show()
+
 
 
 
@@ -48,10 +42,7 @@ KMeans — AgeGroup=Gen X (42–57) — cluster summaries:
   • Health Insurance - PPO Individual + Retirement Plan - 401k Basic Matching + Tuition Reimbursement - Graduate Degree | AgeGroup: Gen X (42–57) (100%)  |  Top: Health Insurance - PPO Individual, Retirement Plan - 401k Basic Matching, Tuition Reimbursement - Graduate Degree  |  Skews: AgeGroup=Gen X (42–57) (100%)
   • Retirement Plan - 401k Catch-Up Contribu… + Retirement Plan - 401k Maximum Matching + Life Insurance - Supplemental Standard | AgeGroup: Gen X (42–57) (100%)  |  Top: Retirement Plan - 401k Catch-Up Contributions, Retirement Plan - 401k Maximum Matching, Life Insurance - Supplemental Standard  |  Skews: AgeGroup=Gen X (42–57) (100%)
   • Commuter Benefits - Transit Subsidy + Gym Membership - Family Membership + Flexible Spending Account - Healthcare FSA | AgeGroup: Gen X (42–57) (100%)  |  Top: Commuter Benefits - Transit Subsidy, Gym Membership - Family Membership, Flexible Spending Account - Healthcare FSA  |  Skews: AgeGroup=Gen X (42–57) (100%)
-d:\Anaconda\Lib\site-packages\sklearn\cluster\_kmeans.py:1382: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=8.
-  warnings.warn(
-C:\Users\Mayukh Sen\AppData\Local\Temp\ipykernel_23204\3734768921.py:99: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all axes decorations.
-  plt.tight_layout(); plt.show()
+
 
 
 KMeans — AgeGroup=Gen Z (18–25) — cluster summaries:
@@ -59,7 +50,3 @@ KMeans — AgeGroup=Gen Z (18–25) — cluster summaries:
   • Life Insurance - Supplemental Standard + Tuition Reimbursement - Professional Cer… + Gym Membership - Tier 3 Partners | AgeGroup: Gen Z (18–25) (100%)  |  Top: Life Insurance - Supplemental Standard, Tuition Reimbursement - Professional Certification, Gym Membership - Tier 3 Partners  |  Skews: AgeGroup=Gen Z (18–25) (100%)
   • Retirement Plan - 401k Basic Matching + Health Insurance - PPO Individual + Cell Phone Allowance - Monthly Communica… | AgeGroup: Gen Z (18–25) (100%)  |  Top: Retirement Plan - 401k Basic Matching, Health Insurance - PPO Individual, Cell Phone Allowance - Monthly Communications  |  Skews: AgeGroup=Gen Z (18–25) (100%)
   • Technology Stipend - Monthly Internet Al… + Wellness Programs - Premium Discount Tier 1 + Flexible Spending Account - Healthcare FSA | AgeGroup: Gen Z (18–25) (100%)  |  Top: Technology Stipend - Monthly Internet Allowance, Wellness Programs - Premium Discount Tier 1, Flexible Spending Account - Healthcare FSA  |  Skews: AgeGroup=Gen Z (18–25) (100%)
-d:\Anaconda\Lib\site-packages\sklearn\cluster\_kmeans.py:1382: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=2.
-  warnings.warn(
-C:\Users\Mayukh Sen\AppData\Local\Temp\ipykernel_23204\3734768921.py:99: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all axes decorations.
-  plt.tight_layout(); plt.show()
